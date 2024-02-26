@@ -7,18 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A7733EF32B5822A300382949 /* StanfordApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7733EF22B5822A300382949 /* StanfordApp.swift */; };
-		A7733EF52B5822A300382949 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7733EF42B5822A300382949 /* ContentView.swift */; };
+		A7733EF32B5822A300382949 /* MemorizeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7733EF22B5822A300382949 /* MemorizeApp.swift */; };
+		A7733EF52B5822A300382949 /* EmojiMemoryGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7733EF42B5822A300382949 /* EmojiMemoryGameView.swift */; };
 		A7733EF72B5822A600382949 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7733EF62B5822A600382949 /* Assets.xcassets */; };
 		A7733EFA2B5822A600382949 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7733EF92B5822A600382949 /* Preview Assets.xcassets */; };
+		A774B2782B6ABDB200346C5F /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A774B2772B6ABDB200346C5F /* MemoryGame.swift */; };
+		A774B27A2B6ABF8B00346C5F /* EmojiMemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A774B2792B6ABF8B00346C5F /* EmojiMemoryGame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A7733EEF2B5822A300382949 /* Stanford.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stanford.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A7733EF22B5822A300382949 /* StanfordApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StanfordApp.swift; sourceTree = "<group>"; };
-		A7733EF42B5822A300382949 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A7733EF22B5822A300382949 /* MemorizeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorizeApp.swift; sourceTree = "<group>"; };
+		A7733EF42B5822A300382949 /* EmojiMemoryGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiMemoryGameView.swift; sourceTree = "<group>"; };
 		A7733EF62B5822A600382949 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7733EF92B5822A600382949 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A774B2772B6ABDB200346C5F /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
+		A774B2792B6ABF8B00346C5F /* EmojiMemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiMemoryGame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +55,10 @@
 		A7733EF12B5822A300382949 /* Stanford */ = {
 			isa = PBXGroup;
 			children = (
-				A7733EF22B5822A300382949 /* StanfordApp.swift */,
-				A7733EF42B5822A300382949 /* ContentView.swift */,
+				A7733EF22B5822A300382949 /* MemorizeApp.swift */,
+				A7733EF42B5822A300382949 /* EmojiMemoryGameView.swift */,
+				A774B2772B6ABDB200346C5F /* MemoryGame.swift */,
+				A774B2792B6ABF8B00346C5F /* EmojiMemoryGame.swift */,
 				A7733EF62B5822A600382949 /* Assets.xcassets */,
 				A7733EF82B5822A600382949 /* Preview Content */,
 			);
@@ -137,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7733EF52B5822A300382949 /* ContentView.swift in Sources */,
-				A7733EF32B5822A300382949 /* StanfordApp.swift in Sources */,
+				A7733EF52B5822A300382949 /* EmojiMemoryGameView.swift in Sources */,
+				A7733EF32B5822A300382949 /* MemorizeApp.swift in Sources */,
+				A774B2782B6ABDB200346C5F /* MemoryGame.swift in Sources */,
+				A774B27A2B6ABF8B00346C5F /* EmojiMemoryGame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
