@@ -10,8 +10,11 @@ import SwiftUI
 class EmojiMemoryGame: ObservableObject {
     private static let emojis = ["📡", "🔦", "💶", "🕰", "🎚", "🪜", "💎", "⚖️", "🔨", "🔭"]
 
+    private static let sports = ["⚽️", "🏀", "🏈", "⚾️", "🥎", "🏐", "🏉", "🥏"]
     
+    private static let food = ["🍏", "🍎", "🍐", "🍊", "🍋", "🍌", "🍉", "🍇", "🍓", "🫐", "🍈", "🍒"]
     
+    var emojis = []
     
     
     private static func createMemoryGame() -> MemoryGame<String> {
