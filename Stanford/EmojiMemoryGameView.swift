@@ -21,7 +21,7 @@ struct EmojiMemoryGameView: View {
             }
             HStack {
                 Button(action: {
-                    viewModel.emojisButton()
+                    viewModel.emojiButton()
                 }) {
                     VStack {
                         Image(systemName: "peacesign")

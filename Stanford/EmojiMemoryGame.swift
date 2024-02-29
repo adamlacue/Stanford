@@ -10,7 +10,10 @@ import SwiftUI
 class EmojiMemoryGame: ObservableObject {
 
         
+    
         private static var emojis = ["📡", "🔦", "💶", "🕰", "🎚", "🪜", "💎", "⚖️", "🔨", "🔭"]
+    
+        private static var emoji = ["📡", "🔦", "💶", "🕰", "🎚", "🪜", "💎", "⚖️", "🔨", "🔭"]
         
         private static let sports = ["⚽️", "🏀", "🏈", "⚾️", "🥎", "🏐", "🏉", "🥏"]
         
@@ -44,8 +47,8 @@ class EmojiMemoryGame: ObservableObject {
         model.choose(card)
     }
     
-    func emojisButton() {
-        EmojiMemoryGame.emojis = EmojiMemoryGame.emojis
+    func emojiButton() {
+        EmojiMemoryGame.emojis = EmojiMemoryGame.emoji
         model = EmojiMemoryGame.createMemoryGame()
     }
     
