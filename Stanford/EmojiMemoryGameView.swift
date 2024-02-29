@@ -21,35 +21,38 @@ struct EmojiMemoryGameView: View {
             }
             HStack {
                 Button(action: {
+                    viewModel.emojisButton()
                 }) {
                     VStack {
-                        Image(systemName: "party.popper.fill")
+                        Image(systemName: "peacesign")
                             .imageScale(.large)
                             .frame(maxWidth: .infinity)
                         
-                        Text("Button 1")
+                        Text("Emojis")
                             .padding(.bottom, 4)
                     }
                 }
                 Button(action: {
+                    viewModel.sportsButton()
                 }) {
                     VStack {
-                        Image(systemName: "circle.grid.hex.fill")
+                        Image(systemName: "sportscourt.fill")
                             .imageScale(.large)
                             .frame(maxWidth: .infinity)
                         
-                        Text("Button 2")
+                        Text("Sports")
                             .padding(.bottom, 4)
                     }
                 }
                 Button(action: {
+                    viewModel.foodButton()
                 }) {
                     VStack {
-                        Image(systemName: "a.book.closed.fill.ja")
+                        Image(systemName: "fork.knife.circle.fill")
                             .imageScale(.large)
                             .frame(maxWidth: .infinity)
                         
-                        Text("Button 3")
+                        Text("Food")
                             .padding(.bottom, 4)
                     }
                 }
@@ -60,6 +63,7 @@ struct EmojiMemoryGameView: View {
         }
         .padding()
     }
+    
     
     var cards: some View {
         LazyVGrid(columns: [GridItem(.adaptive(minimum: 85), spacing: 0)], spacing: 0) {
@@ -76,6 +80,11 @@ struct EmojiMemoryGameView: View {
     }
     
 }
+
+
+
+
+
 
 struct CardView: View {
 

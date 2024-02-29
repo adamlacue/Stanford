@@ -8,17 +8,18 @@
 import SwiftUI
 
 class EmojiMemoryGame: ObservableObject {
-    private static let emojis = ["📡", "🔦", "💶", "🕰", "🎚", "🪜", "💎", "⚖️", "🔨", "🔭"]
 
-    private static let sports = ["⚽️", "🏀", "🏈", "⚾️", "🥎", "🏐", "🏉", "🥏"]
-    
-    private static let food = ["🍏", "🍎", "🍐", "🍊", "🍋", "🍌", "🍉", "🍇", "🍓", "🫐", "🍈", "🍒"]
-    
-    var emojis = []
+        
+        private static var emojis = ["📡", "🔦", "💶", "🕰", "🎚", "🪜", "💎", "⚖️", "🔨", "🔭"]
+        
+        private static let sports = ["⚽️", "🏀", "🏈", "⚾️", "🥎", "🏐", "🏉", "🥏"]
+        
+        private static let food = ["🍏", "🍎", "🍐", "🍊", "🍋", "🍌", "🍉", "🍇", "🍓", "🫐", "🍈", "🍒"]  
+ 
     
     
     private static func createMemoryGame() -> MemoryGame<String> {
-        return MemoryGame(numberOfPairsOfCards: 10) { pairIndex in
+        return MemoryGame(numberOfPairsOfCards: emojis.count) { pairIndex in
             if emojis.indices.contains(pairIndex) {
                 return emojis[pairIndex]
             } else {
@@ -41,6 +42,21 @@ class EmojiMemoryGame: ObservableObject {
     
     func choose(_ card:MemoryGame<String>.Card) {
         model.choose(card)
+    }
+    
+    func emojisButton() {
+        EmojiMemoryGame.emojis = EmojiMemoryGame.emojis
+        model = EmojiMemoryGame.createMemoryGame()
+    }
+    
+    func sportsButton() {
+        EmojiMemoryGame.emojis = EmojiMemoryGame.sports
+        model = EmojiMemoryGame.createMemoryGame()
+    }
+    
+    func foodButton() {
+        EmojiMemoryGame.emojis = EmojiMemoryGame.food
+        model = EmojiMemoryGame.createMemoryGame()
     }
     
 }
